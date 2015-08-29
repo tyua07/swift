@@ -1,44 +1,43 @@
-//  登录控制器
-//  LoginViewController.swift
+//
+//  OrderTabViewController.swift
 //  楼下100-配送员
 //
-//  Created by yangyifan on 15/8/26.
+//  Created by yangyifan on 15/8/29.
 //  Copyright (c) 2015年 womenshuo. All rights reserved.
 //
 
 import UIKit
 
+class OrderTabViewController: UIViewController {
 
-class LoginViewController: UIViewController {
-    
-    @IBOutlet var userName: UITextField!
-    @IBOutlet var password: UITextField!
-    @IBOutlet var navgationBar: UINavigationBar!
+    var bar:UIButton!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        var width = UIScreen.mainScreen().bounds.width
+        //创建tab
+        createOrderListTabButton()
         
-        //var statusBar = UIView(frame: )
         
+
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func login(sender: UIButton) {
-        if(userName.text == "yangyifan" && password == "123456"){
-            alter("登录成功")
-            self.password.resignFirstResponder()
-        }else{
-            alter("账户或者密码不正确")
+    //循环创建按钮
+    func createOrderListTabButton(){
+        //获得当前屏幕宽度
+        var width = UIScreen.mainScreen().bounds.width
+        
+        //除以4 获得每个按钮的宽度
+        var btnWitdh = width / 4
+        println(btnWitdh)
+        for index in 1...4{
+            //var current_btn_x = (btnWitdh * index) as? Int
+            //var btn = UIButton(frame: CGRect(x: current_btn_x, y: 0, width: btnWitdh, height: 35)))
+            //self.addSubView(btn)
         }
     }
-    
-    func alter(message: String){
-        var alter = UIAlertView(title: "提示", message: message, delegate: self, cancelButtonTitle: "确认")
-        alter.show()
-    }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -16,6 +16,8 @@
 		EB86822A1B64FD3B00921080 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8682291B64FD3B00921080 /* Images.xcassets */; };
 		EB86822D1B64FD3B00921080 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB86822B1B64FD3B00921080 /* LaunchScreen.xib */; };
 		EB8682391B64FD3C00921080 /* __100____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8682381B64FD3C00921080 /* __100____Tests.swift */; };
+		EBBB698F1B91B89700163509 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB698E1B91B89700163509 /* OrderListViewController.swift */; };
+		EBBB69951B91CF7700163509 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB69941B91CF7700163509 /* OrderListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		EB8682321B64FD3C00921080 /* 楼下100-配送员Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "楼下100-配送员Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8682371B64FD3C00921080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB8682381B64FD3C00921080 /* __100____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "__100____Tests.swift"; sourceTree = "<group>"; };
+		EBBB698E1B91B89700163509 /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		EBBB69941B91CF7700163509 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EB1FB1701B8DEF6700FD15F0 /* LoginViewController.swift */,
+				EBBB698E1B91B89700163509 /* OrderListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		EB1FB16F1B8DEF3800FD15F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBBB69941B91CF7700163509 /* OrderListTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -317,6 +323,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBBB69951B91CF7700163509 /* OrderListTableViewCell.swift in Sources */,
+				EBBB698F1B91B89700163509 /* OrderListViewController.swift in Sources */,
 				EB1FB1711B8DEF6700FD15F0 /* LoginViewController.swift in Sources */,
 				EB8682251B64FD3B00921080 /* ViewController.swift in Sources */,
 				EB8682201B64FD3B00921080 /* AppDelegate.swift in Sources */,

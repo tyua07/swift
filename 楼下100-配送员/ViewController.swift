@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 
 class ViewController: UIViewController {
     
@@ -35,37 +35,37 @@ class ViewController: UIViewController {
     
     //登录
     @IBAction func login(sender: UIButton) {
-        if(username.text == ""){
-            alert("用户名不能为空")
-        }else if(password.text == ""){
-            alert("密码不能为空")
-        }else{
-            //发送请求
-            Alamofire.request(.POST, "http://tidelivery.louxia100.com/app/delivery/user_logion" , parameters:["ver":100, "loginkey":username.text, "password":password.text]).responseJSON(options: NSJSONReadingOptions(), completionHandler: { (request, response, json, error) -> Void in
-                
-                println(json!)
-                var code = json!.valueForKey("code") as! Int
-                
-                if(code == 0){
-                    //var city_id = json!.valueForKey()
-                    //var data = json?.objectForKey("data") as! NSObject
-                    
-                    //println(data.city_id)
-                }else{
-                    self.alert("用户名或者密码错误")
-                }
-                //var code = json!.valueForKey("code") as! [NSDictionary]
-                
-                //if(code != 0 ){
-                    //alert("用户名或者密码错误")
-                //}
-                
-                //var data = json!.valueForKey("data") as! [NSDictionary]
-                
-               // println(data.city_id)
-            })
-            
-        }
+//        if(username.text == ""){
+//            alert("用户名不能为空")
+//        }else if(password.text == ""){
+//            alert("密码不能为空")
+//        }else{
+//            //发送请求
+//            Alamofire.request(.POST, "http://tidelivery.louxia100.com/app/delivery/user_logion" , parameters:["ver":100, "loginkey":username.text, "password":password.text]).responseJSON(options: NSJSONReadingOptions(), completionHandler: { (request, response, json, error) -> Void in
+//                
+//                println(json!)
+//                var code = json!.valueForKey("code") as! Int
+//                
+//                if(code == 0){
+//                    //var city_id = json!.valueForKey()
+//                    //var data = json?.objectForKey("data") as! NSObject
+//                    
+//                    //println(data.city_id)
+//                }else{
+//                    self.alert("用户名或者密码错误")
+//                }
+//                //var code = json!.valueForKey("code") as! [NSDictionary]
+//                
+//                //if(code != 0 ){
+//                    //alert("用户名或者密码错误")
+//                //}
+//                
+//                //var data = json!.valueForKey("data") as! [NSDictionary]
+//                
+//               // println(data.city_id)
+//            })
+//            
+//        }
         
         
 
